@@ -1,30 +1,32 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tende Tudo
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="home-content">
+  <section class="hero">
+    <h1>Bem-vindo à <span>Tende Tudo</span></h1>
+    <p>Na Tende Tudo, você encontra tudo o que precisa em um só lugar — tecnologia, moda, decoração e muito mais, com entrega rápida e preço justo.</p>
+    <ion-button color="primary" routerLink="/products">Explorar Produtos</ion-button>
+  </section>
 
-<ion-content [fullscreen]="true">
-  <!-- diretiva estrutural @for -->
-  @for (produto of produtos; track produto.id) {
-    <ion-card [routerLink]="['/detalhes', 'produto.id']">
-      <img [src]="produto.image" alt="">
+  <section class="features">
+    <ion-card>
       <ion-card-header>
-        <ion-button [routerLink]="['/detalhes']">Ver Detalhes</ion-button>
-        <!-- interpolação -->
-        <ion-card-title> {{ produto.title }} </ion-card-title>
-        <!-- pipe builtin -->
-        <ion-card-subtitle>{{ produto.price | currency:'BRL' }}</ion-card-subtitle>
+        <ion-card-title>🚚 Entrega Rápida</ion-card-title>
       </ion-card-header>
+      <ion-card-content>Receba seus produtos com segurança e agilidade em qualquer lugar do Brasil.</ion-card-content>
     </ion-card>
-  }
-</ion-content>
-<ion-footer>
 
-  <ion-toolbar>
-    <ion-title>Sigma</ion-title>
-     <p>"tudoquevoceprocura1221@gmail.com"></p>
-  </ion-toolbar>
-</ion-footer>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>💳 Pagamento Seguro</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>Trabalhamos com os melhores sistemas de pagamento, garantindo segurança total nas suas compras.</ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>⭐ Qualidade Garantida</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>Selecionamos os melhores fornecedores para oferecer produtos com alto padrão de qualidade.</ion-card-content>
+    </ion-card>
+  </section>
+</ion-content>
+
+
