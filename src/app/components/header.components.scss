@@ -1,0 +1,16 @@
+ion-toolbar {
+  --background: linear-gradient(90deg, #0077ff, #00c896);
+  --color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+ion-title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+ion-button {
+  --color: white;
+  font-weight: 500;
+}
+

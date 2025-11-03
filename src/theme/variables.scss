@@ -1,0 +1,15 @@
+:root {
+  --ion-color-primary: #0077ff;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-secondary: #00c896;
+  --ion-color-warning: #ffb400;
+  --ion-background-color: #f7f8fa;
+  --ion-text-color: #222;
+  --ion-font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--ion-font-family);
+  background-color: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
