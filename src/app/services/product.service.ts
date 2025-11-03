@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class ProductService {
-  private apiUrl = 'https://api.escuelajs.co/api/v1/products'; // ou a mesma URL já usada
+  private apiUrl = 'https://api.escuelajs.co/api/v1/products'; 
 
   constructor(private http: HttpClient) {}
 
